@@ -1,0 +1,207 @@
+DEBUG [2013-11-10 22:41:52,965] edu.sjsu.cmpe.library.LibraryService: Queue name is /queue/65880.book.orders. Topic name is /topic/65880.book.*
+WARN  [2013-11-10 22:41:53,139] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-10 22:41:53,257] com.yammer.dropwizard.cli.ServerCommand: Starting library-service
+INFO  [2013-11-10 22:41:53,272] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-10 22:41:53,454] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-10 22:41:53,565] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    DELETE  /library/v1/books/{isbn} (edu.sjsu.cmpe.library.api.resources.BookResource)
+    GET     /library/v1/books (edu.sjsu.cmpe.library.api.resources.BookResource)
+    GET     /library/v1/books/{isbn} (edu.sjsu.cmpe.library.api.resources.BookResource)
+    POST    /library/v1/books (edu.sjsu.cmpe.library.api.resources.BookResource)
+    PUT     /library/v1/books/{isbn} (edu.sjsu.cmpe.library.api.resources.BookResource)
+    GET     /library/ (edu.sjsu.cmpe.library.ui.resources.HomeResource)
+    GET     /library/v1/ (edu.sjsu.cmpe.library.api.resources.RootResource)
+
+INFO  [2013-11-10 22:41:53,565] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-10 22:41:53,957] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8001
+INFO  [2013-11-10 22:41:53,958] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9001
+DEBUG [2013-11-10 22:44:32,432] edu.sjsu.cmpe.library.LibraryService: Queue name is /queue/65880.book.orders. Topic name is /topic/65880.book.*
+WARN  [2013-11-10 22:44:32,451] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-10 22:44:32,513] com.yammer.dropwizard.cli.ServerCommand: Starting library-service
+INFO  [2013-11-10 22:44:32,516] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-10 22:44:32,615] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-10 22:44:32,686] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    DELETE  /library/v1/books/{isbn} (edu.sjsu.cmpe.library.api.resources.BookResource)
+    GET     /library/v1/books (edu.sjsu.cmpe.library.api.resources.BookResource)
+    GET     /library/v1/books/{isbn} (edu.sjsu.cmpe.library.api.resources.BookResource)
+    POST    /library/v1/books (edu.sjsu.cmpe.library.api.resources.BookResource)
+    PUT     /library/v1/books/{isbn} (edu.sjsu.cmpe.library.api.resources.BookResource)
+    GET     /library/ (edu.sjsu.cmpe.library.ui.resources.HomeResource)
+    GET     /library/v1/ (edu.sjsu.cmpe.library.api.resources.RootResource)
+
+INFO  [2013-11-10 22:44:32,686] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-10 22:44:32,955] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8001
+INFO  [2013-11-10 22:44:32,957] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9001
+ERROR [2013-11-10 22:44:36,327] com.sun.jersey.spi.container.ContainerResponse: A message body writer for Java class edu.sjsu.cmpe.library.ui.views.HomeView, and Java type class edu.sjsu.cmpe.library.ui.views.HomeView, and MIME media type text/html was not found
+ERROR [2013-11-10 22:44:36,328] com.sun.jersey.spi.container.ContainerResponse: The registered message body writers compatible with the MIME media type are:
+*/* ->
+  com.sun.jersey.core.impl.provider.entity.FormProvider
+  com.sun.jersey.core.impl.provider.entity.StringProvider
+  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider
+  com.sun.jersey.core.impl.provider.entity.FileProvider
+  com.sun.jersey.core.impl.provider.entity.InputStreamProvider
+  com.sun.jersey.core.impl.provider.entity.DataSourceProvider
+  com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.ReaderProvider
+  com.sun.jersey.core.impl.provider.entity.DocumentProvider
+  com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider
+  com.sun.jersey.core.impl.provider.entity.SourceProvider$SourceWriter
+  com.sun.jersey.server.impl.template.ViewableMessageBodyWriter
+  com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General
+  com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider
+
+ERROR [2013-11-10 22:45:33,850] com.sun.jersey.spi.container.ContainerResponse: A message body writer for Java class edu.sjsu.cmpe.library.ui.views.HomeView, and Java type class edu.sjsu.cmpe.library.ui.views.HomeView, and MIME media type text/html was not found
+ERROR [2013-11-10 22:45:33,850] com.sun.jersey.spi.container.ContainerResponse: The registered message body writers compatible with the MIME media type are:
+*/* ->
+  com.sun.jersey.core.impl.provider.entity.FormProvider
+  com.sun.jersey.core.impl.provider.entity.StringProvider
+  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider
+  com.sun.jersey.core.impl.provider.entity.FileProvider
+  com.sun.jersey.core.impl.provider.entity.InputStreamProvider
+  com.sun.jersey.core.impl.provider.entity.DataSourceProvider
+  com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.ReaderProvider
+  com.sun.jersey.core.impl.provider.entity.DocumentProvider
+  com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider
+  com.sun.jersey.core.impl.provider.entity.SourceProvider$SourceWriter
+  com.sun.jersey.server.impl.template.ViewableMessageBodyWriter
+  com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General
+  com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider
+
+DEBUG [2013-11-10 23:00:01,440] edu.sjsu.cmpe.library.LibraryService: Queue name is /queue/65880.book.orders. Topic name is /topic/65880.book.*
+WARN  [2013-11-10 23:00:01,459] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-10 23:00:01,521] com.yammer.dropwizard.cli.ServerCommand: Starting library-service
+INFO  [2013-11-10 23:00:01,524] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-10 23:00:01,626] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-10 23:00:01,702] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    DELETE  /library/v1/books/{isbn} (edu.sjsu.cmpe.library.api.resources.BookResource)
+    GET     /library/v1/books (edu.sjsu.cmpe.library.api.resources.BookResource)
+    GET     /library/v1/books/{isbn} (edu.sjsu.cmpe.library.api.resources.BookResource)
+    POST    /library/v1/books (edu.sjsu.cmpe.library.api.resources.BookResource)
+    PUT     /library/v1/books/{isbn} (edu.sjsu.cmpe.library.api.resources.BookResource)
+    GET     /library/ (edu.sjsu.cmpe.library.ui.resources.HomeResource)
+    GET     /library/v1/ (edu.sjsu.cmpe.library.api.resources.RootResource)
+
+INFO  [2013-11-10 23:00:01,702] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-10 23:00:01,971] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8001
+INFO  [2013-11-10 23:00:01,973] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9001
+DEBUG [2013-11-10 23:02:29,690] edu.sjsu.cmpe.library.LibraryService: Queue name is /queue/65880.book.orders. Topic name is /topic/65880.book.*
+WARN  [2013-11-10 23:02:29,712] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-10 23:02:29,781] com.yammer.dropwizard.cli.ServerCommand: Starting library-service
+INFO  [2013-11-10 23:02:29,783] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-10 23:02:29,890] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-10 23:02:29,990] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    DELETE  /library/v1/books/{isbn} (edu.sjsu.cmpe.library.api.resources.BookResource)
+    GET     /library/v1/books (edu.sjsu.cmpe.library.api.resources.BookResource)
+    GET     /library/v1/books/{isbn} (edu.sjsu.cmpe.library.api.resources.BookResource)
+    POST    /library/v1/books (edu.sjsu.cmpe.library.api.resources.BookResource)
+    PUT     /library/v1/books/{isbn} (edu.sjsu.cmpe.library.api.resources.BookResource)
+    GET     /library/ (edu.sjsu.cmpe.library.ui.resources.HomeResource)
+    GET     /library/v1/ (edu.sjsu.cmpe.library.api.resources.RootResource)
+
+INFO  [2013-11-10 23:02:29,990] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-10 23:02:30,335] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8001
+INFO  [2013-11-10 23:02:30,337] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9001
+DEBUG [2013-11-10 23:07:46,511] edu.sjsu.cmpe.library.LibraryService: Queue name is /queue/65880.book.orders. Topic name is /topic/65880.book.*
+WARN  [2013-11-10 23:07:46,682] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-10 23:07:47,185] com.yammer.dropwizard.cli.ServerCommand: Starting library-service
+INFO  [2013-11-10 23:07:47,257] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-10 23:07:48,356] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-10 23:07:49,061] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    DELETE  /library/v1/books/{isbn} (edu.sjsu.cmpe.library.api.resources.BookResource)
+    GET     /library/v1/books (edu.sjsu.cmpe.library.api.resources.BookResource)
+    GET     /library/v1/books/{isbn} (edu.sjsu.cmpe.library.api.resources.BookResource)
+    POST    /library/v1/books (edu.sjsu.cmpe.library.api.resources.BookResource)
+    PUT     /library/v1/books/{isbn} (edu.sjsu.cmpe.library.api.resources.BookResource)
+    GET     /library/ (edu.sjsu.cmpe.library.ui.resources.HomeResource)
+    GET     /library/v1/ (edu.sjsu.cmpe.library.api.resources.RootResource)
+
+INFO  [2013-11-10 23:07:49,061] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-10 23:07:50,576] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8001
+INFO  [2013-11-10 23:07:50,581] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9001
+ERROR [2013-11-10 23:09:05,847] com.sun.jersey.spi.container.ContainerResponse: A message body writer for Java class edu.sjsu.cmpe.library.ui.views.HomeView, and Java type class edu.sjsu.cmpe.library.ui.views.HomeView, and MIME media type text/html was not found
+ERROR [2013-11-10 23:09:05,848] com.sun.jersey.spi.container.ContainerResponse: The registered message body writers compatible with the MIME media type are:
+*/* ->
+  com.sun.jersey.core.impl.provider.entity.FormProvider
+  com.sun.jersey.core.impl.provider.entity.StringProvider
+  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider
+  com.sun.jersey.core.impl.provider.entity.FileProvider
+  com.sun.jersey.core.impl.provider.entity.InputStreamProvider
+  com.sun.jersey.core.impl.provider.entity.DataSourceProvider
+  com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.ReaderProvider
+  com.sun.jersey.core.impl.provider.entity.DocumentProvider
+  com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider
+  com.sun.jersey.core.impl.provider.entity.SourceProvider$SourceWriter
+  com.sun.jersey.server.impl.template.ViewableMessageBodyWriter
+  com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General
+  com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider
+
