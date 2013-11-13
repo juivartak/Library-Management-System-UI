@@ -84,6 +84,7 @@ public class LibraryService extends Service<LibraryServiceConfiguration> {
     @Override
     public void initialize(Bootstrap<LibraryServiceConfiguration> bootstrap) {
 	bootstrap.setName("library-service");
+	bootstrap.addBundle(new ViewBundle());
 	bootstrap.addBundle(new AssetsBundle());
     }
 
